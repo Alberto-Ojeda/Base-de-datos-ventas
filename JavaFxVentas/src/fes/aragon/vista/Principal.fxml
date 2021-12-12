@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="idPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="770.0" style="-fx-background-color: #ECDDDA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controlador.PrincipalController">
+	<left>
+		<ToolBar orientation="VERTICAL" prefHeight="413.0" prefWidth="200.0" style="-fx-background-color: #142427;" BorderPane.alignment="CENTER">
+			<items>
+				<AnchorPane scaleX="1.2" scaleZ="1.1" translateX="33.0" translateY="-20.0">
+					<children>
+						<ImageView fitHeight="150.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleZ="0.0" translateX="-14.0">
+							<image>
+								<Image url="C:\Users\alberto\Documents\proyecto_mike\logo.png" />
+							</image>
+						</ImageView>
+					</children>
+				</AnchorPane>
+				<Button mnemonicParsing="false" onAction="#accionCliente" prefHeight="25.0" prefWidth="190.0" stylesheets="@../inicio/application.css" text="Cliente">
+					<graphic>
+						<FontAwesomeIconView glyphName="USER" size="20.0" />
+					</graphic>
+				</Button>
+				<Button mnemonicParsing="false" onAction="#accionFactura" prefHeight="25.0" prefWidth="190.0" stylesheets="@../inicio/application.css" text="Factura">
+					<graphic>
+						<FontAwesomeIconView glyphName="FILE_TEXT" size="20.0" />
+					</graphic>
+				</Button>
+				<Button mnemonicParsing="false" onAction="#accionFacturaProd" prefHeight="25.0" prefWidth="190.0" stylesheets="@../inicio/application.css" text="Fact_prod">
+					<graphic>
+						<FontAwesomeIconView glyphName="FAX" size="20.0" />
+					</graphic>
+				</Button>
+				<Button mnemonicParsing="false" onAction="#accionProducto" prefHeight="25.0" prefWidth="190.0" stylesheets="@../inicio/application.css" text="Producto">
+					<graphic>
+						<FontAwesomeIconView glyphName="GG_CIRCLE" size="20.0" />
+					</graphic>
+				</Button>
+			</items>
+		</ToolBar>
+	</left>
+	<center>
+		<ImageView fitHeight="232.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+			<image>
+				<Image url="C:\Users\alberto\Documents\proyecto_mike\logo.png" />
+			</image>
+		</ImageView>
+	</center>
+</BorderPane>
